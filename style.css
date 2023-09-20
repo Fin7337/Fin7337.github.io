@@ -4,9 +4,15 @@ body{
     background-repeat: no-repeat;
     height: 40rem;
     background-size: cover;
+    font-size: 1rem;
+    color: blue;
 }
 h1{
     color: yellow;
     font-family: sans-serif;
     font-weight: lighter;
+}
+a:hover{
+    font-size: 1.2rem;
+    color:purple;
 }
