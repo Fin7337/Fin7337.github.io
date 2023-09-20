@@ -1,6 +1,7 @@
 var answer = 0;
 var equation = "";
 var answerdisplay = document.getElementById("answerdisplay");
+const n0 = document.getElementById("0");
 const n1 = document.getElementById("1");
 const n2 = document.getElementById("2");
 const n3 = document.getElementById("3");
@@ -11,9 +12,15 @@ const n7 = document.getElementById("7");
 const n8 = document.getElementById("8");
 const n9 = document.getElementById("9");
 
-const oadd = document.getElementById("plus")
-const ominus = document.getElementById("minus")
-const oequals = document.getElementById("equals")
+const oadd = document.getElementById("plus");
+const ominus = document.getElementById("minus");
+const omultiply = document.getElementById("multiply");
+const oequals = document.getElementById("equals");
+const clear = document.getElementById("clear");
+n0.addEventListener("click", function(){
+    equation+="0";
+    answerdisplay.innerText = equation;
+})
 n1.addEventListener("click", function(){
     equation+="1";
     answerdisplay.innerText = equation;
@@ -58,7 +65,17 @@ ominus.addEventListener("click", function(){
     equation+="-";
     answerdisplay.innerText = equation;
 })
+omultiply.addEventListener("click", function(){
+    equation+="*";
+    answerdisplay.innerText = equation;
+})
 oequals.addEventListener("click", function(){
     answer = eval(equation);
+    answerdisplay.innerText = answer;
+    equation = answer;
+})
+clear.addEventListener("click", function(){
+    equation = "";
+    answer = equation;
     answerdisplay.innerText = answer;
 })
