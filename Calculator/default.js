@@ -66,6 +66,7 @@ ominus.addEventListener("click", function(){
     answerdisplay.innerText = equation;
 })
 omultiply.addEventListener("click", function(){
+    alert("nfijwad")
     equation+="*";
     answerdisplay.innerText = equation;
 })
