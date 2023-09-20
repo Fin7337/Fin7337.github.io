@@ -4,5 +4,9 @@ body{
     background-repeat: no-repeat;
     height: 40rem;
     background-size: cover;
-
+}
+h1{
+    color: yellow;
+    font-family: sans-serif;
+    font-weight: lighter;
 }
