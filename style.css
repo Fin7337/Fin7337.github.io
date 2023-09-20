@@ -1,0 +1,8 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, blue, cyan);
+    background-repeat: no-repeat;
+    height: 40rem;
+    background-size: cover;
+
+}
